@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Merriweather:300,400,700,900|Montserrat:100,200,300,400,500,600,700,800,900|family=Roboto+Slab:100,300,400,700');
+
+/* body {
+    position: relative;
+    width: 100%;
+} */
+
+.navbar {
+    background-color: #212529;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top:0;
+}
+
+.navbar h1 {
+    font-family: "kaushan Script", Arial, Helvetica, sans-serif;
+    color: #FECA30;
+    font-size: 20px;
+    margin: 18px;
+    z-index: 3;
+}
+
+.navItems {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background-color: #212529;
+    text-transform: uppercase;
+    overflow: hidden;
+    height:0;
+    transition: .5s;
+    position: fixed;
+    width:100%;
+    z-index: 1;
+    left:0;
+    margin-top:50px;
+}
+
+.navItems.responsive {
+    height: 213px;
+}
+
+li {
+    padding: 8px 27px 20px 27px;
+    list-style: none;
+}
+
+.navbar button {
+    background-color: #FECA30;
+    color:white;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 12px;
+    padding: 10px;
+    margin: 10px;
+    border:none;
+    letter-spacing: 1px;
+}
+
+.fas {
+    color: white;
+}
+
+.fa-stack {
+    color: #FECA30;
+}
+
+.welcome {
+    background-image: url(./img/header-bg.jpg);
+    background-color: #212529;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    margin-top:50px;
+    /* position: relative;
+    top:50px; */
+}
+
+.welcome h1 {
+    font-family: "Merriweather", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+.welcome h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 25px;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.welcome button {
+    font-family: "Montserrat",Arial, Helvetica, sans-serif;
+    background-color: #FECA30;
+    color:white;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 20px 40px;
+    margin: 10px;
+    border:none;
+    font-weight: 600
+}
+
+.services {
+    color: #212529;
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+}
+
+.serviceBoxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.service {
+    width:200px;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    font-family: 'Merriweather','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #6c757d
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    margin: 15px 0;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 75px;
+    font-family: 'Roboto Slab','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #6c757d;
+    line-height: 1.75;
+}
+
+.portfolio {
+    color: #212529;
+    text-align: center;
+    padding: 80px 0;
+    background-color: #F7F8F9;
+}
+
+.portfolioItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.portfolioItem {
+    margin: 10px;
+    background-color:white;
+    max-width: 100%;
+}
+
+.portfolioItem img {
+    margin-bottom: 20px;
+    width:100%;
+}
+
+.portfolioItem h3 {
+    margin: 0;
+}
+
+.portfolioItem p {
+    padding-bottom: 30px;
+    font-style: italic;
+    font-size:16px;
+}
+
+@media (min-width:768px){
+    .portfolioItem{
+        max-width: 30%;
+    }
+    .portfolioItem p {
+    margin-bottom: 0px;
+    }
+    .welcome h1 {
+        font-family: "Merriweather", Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+    .welcome h2 {
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+        margin-bottom: 50px;
+        font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    }
+}
+
+@media (min-width:990px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .navItems {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 60%;
+        margin-top: 0;
+        position: relative;
+    }
+    .navbar button {
+        display: none;
+    }
+}
